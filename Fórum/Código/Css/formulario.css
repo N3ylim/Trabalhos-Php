@@ -1,0 +1,138 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner principal do formulário */
+.form-container {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+/* Estilos para títulos */
+h1 {
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* Estilos para mensagens de erro */
+.erro {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+/* Estilos para mensagens de sucesso */
+.sucesso {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a área de formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos para os campos de entrada e select */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilo para as opções do select */
+select option {
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilos para o campo de descrição */
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilos para o botão de envio */
+.button {
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #7d3c98;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Efeito hover para o botão */
+.button:hover {
+    background-color: #5e3370;
+}
+
+/* Estilos para links dentro do formulário */
+.form-container a {
+    color: #7d3c98;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: #5e3370;
+}
+
+/* Estilos para mensagens de sucesso */
+.sucesso {
+    color: #7d3c98;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adiciona margem superior */
+    padding: 10px;
+    background-color: #2d2d2d; /* Fundo escuro para destacar a mensagem */
+    border-radius: 6px;
+    border: 1px solid #5e3370;
+}
+
+.erro {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    border: 1px solid #ff6b6b;
+}

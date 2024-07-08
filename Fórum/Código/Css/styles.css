@@ -1,0 +1,98 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+/* Estilos para títulos */
+h1 {
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* Estilos para a área de formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada e select */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilo para as opções do select */
+select option {
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilos para o campo de descrição */
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px; /* Removido o margin-top */
+    box-sizing: border-box;
+    border: 2px solid #666;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Estilos para o botão */
+.button {
+    display: block; /* Alterado para block para ficar um em cima do outro */
+    width: 100%; /* Ajustado para ocupar a largura completa */
+    padding: 20px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #7d3c98; /* Alterado para um tom de roxo */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Efeito hover para o botão */
+.button:hover {
+    background-color: #5e3370; /* Alterado para um tom de roxo mais escuro */
+}
+
+/* Estilo para o texto "ou" */
+.or-text {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ddd;
+}

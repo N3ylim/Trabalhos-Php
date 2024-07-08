@@ -1,0 +1,116 @@
+/* Estilos gerais para o fórum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-height: 800px; /* Altura mínima do container aumentada */
+}
+
+h1, h2 {
+    color: #7d3c98; /* Roxo mais escuro */
+    margin-bottom: 15px;
+}
+
+p {
+    color: #ccc;
+}
+
+a {
+    color: #7d3c98; /* Roxo mais escuro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+/* Estilos para formulário de criação de tópico */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #2d2d2d;
+    color: #ccc;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"], .button {
+    background-color: #7d3c98; /* Roxo mais escuro */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover, .button:hover {
+    background-color: #5e3370; /* Roxo mais claro */
+}
+
+/* Estilos para mensagens de sucesso e erro */
+.erro, .sucesso {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.erro {
+    background-color: #ff6b6b;
+    border: 1px solid #ff4c4c;
+    color: #fff;
+}
+
+.sucesso {
+    background-color: #7c4892;
+    border: 1px solid #7d3c98;
+    color: #fff;
+}
+
+/* Estilos para o botão de sair */
+.sair-button {
+    float: right;
+    background-color: #7d3c98; /* Roxo mais escuro */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.sair-button:hover {
+    background-color: #5e3370; /* Roxo mais claro */
+}
