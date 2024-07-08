@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Controle de Atendimento</title>
+    <link rel="stylesheet" href="../../Css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Atendimento</h1>
+        <p>Por favor, escolha o tipo de atendimento:</p>
+        <br>
+        <div class="buttons">
+            <button class="button" onclick="gerarSenha('normal')">Atendimento Normal</button>
+            <button class="button" onclick="gerarSenha('prioritario')">Atendimento Prioritário</button>
+        </div>
+        <div id="senhaGerada" class="senha"></div>
+        <br>
+        <button class="button" onclick="voltar()">Voltar</button>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        function voltar() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

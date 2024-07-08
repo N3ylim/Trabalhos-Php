@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendente - Controle de Atendimento</title>
+    <link rel="stylesheet" href="../../Css/atendimento.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Painel do Atendente</h1>
+        
+        <h2>Atendimentos Prioritários</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Senha</th>
+                    <th>Data e Hora</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaPrioritarios">
+                <!-- Pedidos prioritários serão carregados aqui -->
+            </tbody>
+        </table>
+        
+        <h2>Atendimentos Normais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Senha</th>
+                    <th>Data e Hora</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaNormais">
+                <!-- Pedidos normais serão carregados aqui -->
+            </tbody>
+        </table>
+        
+    </div>
+
+    <script>
+        // Função para carregar os pedidos do banco de dados
+        function carregarPedidos() {
+            fetch('../../Php/carregar_pedidos.php')
+                .then(response => response.json())
+                .then(data => {
+                    const tabelaPrioritarios = document.getElementById('tabelaPrioritarios');
+                    const tabelaNormais = document.getElementById('tabelaNormais');
+
+                    // Limpar tabelas
+                    tabelaPrioritarios.innerHTML = '';
+                    tabelaNormais.innerHTML = '';
+
+                    // Carregar pedidos prioritários
+                    data.prioritarios.forEach(pedido => {
+                        const row = tabelaPrioritarios.insertRow();
+                        row.innerHTML = `
+                            <td>${pedido.id}</td>
+                            <td>${pedido.senha}</td>
+                            <td>${pedido.data_hora}</td>
+                            <td>
+                                <button onclick="atenderPedido(${pedido.id})">Atender</button>
+                                <button onclick="recusarPedido(${pedido.id})">Recusar</button>
+                            </td>
+                        `;
+                    });
+
+                    // Carregar pedidos normais
+                    data.normais.forEach(pedido => {
+                        const row = tabelaNormais.insertRow();
+                        row.innerHTML = `
+                            <td>${pedido.id}</td>
+                            <td>${pedido.senha}</td>
+                            <td>${pedido.data_hora}</td>
+                            <td>
+                                <button onclick="atenderPedido(${pedido.id})">Atender</button>
+                                <button onclick="recusarPedido(${pedido.id})">Recusar</button>
+                            </td>
+                        `;
+                    });
+                });
+        }
+
+        // Função para atualizar o status do pedido para 'concluído'
+        function atenderPedido(id) {
+            fetch('../../Php/atender_pedido.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: id })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Pedido atendido com sucesso!');
+                    carregarPedidos();
+                } else {
+                    alert('Erro ao atender o pedido.');
+                }
+            });
+        }
+
+        // Função para recusar o pedido
+        function recusarPedido(id) {
+            if (confirm("Tem certeza que deseja recusar este pedido?")) {
+                fetch('../../Php/recusar_pedido.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id: id })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Pedido recusado com sucesso!');
+                        carregarPedidos();
+                    } else {
+                        alert('Erro ao recusar o pedido.');
+                    }
+                });
+            }
+        }
+
+        // Carregar pedidos ao carregar a página
+        window.onload = carregarPedidos;
+    </script>
+</body>
+</html>

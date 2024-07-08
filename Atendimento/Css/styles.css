@@ -1,0 +1,100 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 40px; /* Aumentando o padding */
+    border-radius: 16px; /* Aumentando o raio da borda */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Aumentando a largura do contêiner */
+}
+
+/* Estilos para títulos */
+h1 {
+    margin-bottom: 30px; /* Aumentando a margem inferior */
+    color: #e0e0e0;
+}
+
+/* Estilos para a área de botões */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumentando o espaçamento entre os botões */
+}
+
+/* Estilos para os botões */
+.button {
+    display: inline-block;
+    padding: 20px 30px; /* Aumentando o padding dos botões */
+    font-size: 20px; /* Aumentando o tamanho da fonte */
+    color: white;
+    background-color: #6200ea;
+    text-decoration: none;
+    border-radius: 10px; /* Aumentando o raio da borda */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para os botões */
+.button:hover {
+    background-color: #3700b3;
+}
+
+/* Estilo para a senha gerada */
+.senha {
+    margin-top: 30px; /* Aumentando a margem superior */
+    font-size: 28px; /* Aumentando o tamanho da fonte */
+    color: #ffffff;
+    background-color: #6200ea;
+    padding: 15px 20px; /* Ajustando o padding */
+    border-radius: 8px;
+    display: none;
+}
+
+/* Estilo para a barra de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0; /* Aumentando a margem */
+    box-sizing: border-box;
+    border: 2px solid #bbb2b2;
+    border-radius: 6px;
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+}
+
+/* Estilos adicionais */
+.pedidos-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Aumentando a margem superior */
+}
+.pedido-list {
+    flex: 1;
+}
+.pedido-list h2 {
+    text-align: center;
+}
+.pedido {
+    margin-bottom: 20px; /* Ajustando a margem inferior */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

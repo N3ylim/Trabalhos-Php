@@ -1,0 +1,90 @@
+/* CSS (styles_atendente.css) */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 20px; /* Aumento do padding */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 950px; /* Ajuste do tamanho máximo do container */
+    width: 90%;
+    text-align: center;
+    overflow-x: auto;
+    margin-top: 20px; /* Adicionado um espaçamento superior */
+}
+
+.container h1, .container h2 {
+    color: #ffffff;
+    font-size: 24px; /* Aumento do tamanho da fonte */
+    letter-spacing: 1px;
+}
+
+table {
+    width: calc(100% - 40px); /* Definindo o tamanho da tabela com base no tamanho do container */
+    margin-top: 20px; /* Aumento do espaçamento superior */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Aumento do espaçamento inferior */
+}
+
+table, th, td {
+    border: 1px solid #424242;
+}
+
+th, td {
+    padding: 12px; /* Aumento do padding */
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+td {
+    color: #e0e0e0;
+}
+
+button {
+    padding: 10px 16px; /* Aumento do padding */
+    margin: 6px; /* Aumento da margem */
+    border: none;
+    border-radius: 6px; /* Aumento do raio da borda */
+    cursor: pointer;
+    font-size: 14px; /* Aumento do tamanho da fonte */
+    background-color: #6200ea;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
