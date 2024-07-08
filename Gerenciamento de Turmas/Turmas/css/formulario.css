@@ -1,0 +1,140 @@
+/* Estilos gerais para o corpo */
+body {
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para o contêiner de login e cadastro */
+.login-container {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2.text-center {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos campos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.form-control {
+    background-color: #1e1e1e;
+    color: #ddd;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group .input-group-append {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.input-group .input-group-text {
+    background-color: #1e1e1e;
+    color: #ddd;
+    border: 1px solid #555;
+    border-left: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Estilos dos botões */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn-primary:hover {
+    background-color: #2a3f73;
+    border-color: #2a3f73;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+.btn-success:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Estilos da mensagem de erro */
+.alert {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Estilo para links */
+a {
+    color: #3b5998;
+}
+
+a:hover {
+    color: #2a3f73;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}

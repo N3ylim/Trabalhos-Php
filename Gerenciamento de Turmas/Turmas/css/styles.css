@@ -1,0 +1,126 @@
+/* Estilos gerais para o corpo */
+body {
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Espaço para a navbar fixa */
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #333;
+    color: #ddd;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ddd;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-sair {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-sair:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #1e1e1e;
+    color: #ddd;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3b5998;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #2a3f73;
+}
+
+.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sm:hover {
+    background-color: #c82333;
+}
+
+.alert {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
