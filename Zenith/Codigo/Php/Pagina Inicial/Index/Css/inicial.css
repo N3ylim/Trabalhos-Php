@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #273746);
+    color: #bdc3c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #bdc3c7;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.opcao {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.botao {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contato {
+    text-align: left;
+    color: #bdc3c7;
+    margin-top: 0px;
+}
+
+.user-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #ecf0f1;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
